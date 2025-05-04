@@ -38,7 +38,7 @@ export const Users: FC<UsersProps> = ({
         <input
           value={searchValue}
           type="text"
-          placeholder="Найти пользователя..."
+          placeholder="Search for a user..."
           onChange={onChangeSearchValue}
         />
       </div>
@@ -70,7 +70,7 @@ export const Users: FC<UsersProps> = ({
       )}
       {invitedUsers.length > 0 && (
         <button className="send-invite-btn" onClick={() => setSuccess(true)}>
-          Отправить приглашение
+          Invite
         </button>
       )}
     </>

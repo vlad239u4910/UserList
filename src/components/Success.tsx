@@ -8,13 +8,15 @@ export const Success: FC<SuccessProps> = ({ count }) => {
   return (
     <div className="success-block">
       <img src="/assets/success.svg" alt="Success" />
-      <h3>Успешно!</h3>
-      <p>Всем {count} пользователям отправлено приглашение.</p>
+      <h3>Successfully!</h3>
+      <p>
+        Invition sent to {count} user{count > 1 ? "s" : ""}.
+      </p>
       <button
         className="send-invite-btn"
         onClick={() => window.location.reload()}
       >
-        Назад
+        Back
       </button>
     </div>
   );
